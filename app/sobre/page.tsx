@@ -104,7 +104,7 @@ export default function SobrePage() {
         <div className="text-center border-t border-white/10 pt-16">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Responsáveis pelo Projeto</h2>
           <div className="flex flex-wrap justify-center gap-4">
-            {['Vitor Ribeiro', 'Lucas Guedes', 'Pedro Luiz', 'Bruna Rodrigues', 'Washington'].map((nome) => (
+            {['Vitor Ribeiro'].map((nome) => (
               <span key={nome} className="bg-brand-surface border border-white/5 px-6 py-3 rounded-full text-gray-300 hover:text-white hover:border-brand-green/50 transition-colors cursor-default">
                 {nome}
               </span>
