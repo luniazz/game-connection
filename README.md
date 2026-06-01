@@ -1,4 +1,4 @@
-# 🎮 Game Connection - Fase 5
+# 🎮 Game Connection - Fase 7
 
 > "Mais que Partidas, Criamos Conexões"
 
@@ -40,7 +40,7 @@ Siga estes passos para executar a aplicação localmente:
 * `/src/app`: Páginas e rotas da aplicação (Home, Dados, Sobre, Cadastro).
 * `/src/components`: Componentes reutilizáveis (Navbar, Footer, Cards).
 * `/public`: Imagens e ativos estáticos.
-* `/docs`: Documentação acadêmica e relatórios da Fase 5.
+* `/docs`: Documentação acadêmica e relatórios da Fase 7.
 
 ---
 
