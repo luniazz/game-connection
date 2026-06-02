@@ -3,7 +3,8 @@ import { Geologica } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ThemeToggle from "../components/ThemeToggle"; 
+import ThemeToggle from "../components/ThemeToggle";
+import ScrollToTop from "../components/ScrollToTop";
 
 const geologica = Geologica({ 
   subsets: ["latin"],
@@ -27,8 +28,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         
-        <ThemeToggle /> 
-        
+        <ThemeToggle />
+        <ScrollToTop />
         <Footer />
       </body>
     </html>
