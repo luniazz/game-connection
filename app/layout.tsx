@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ThemeToggle from "../components/ThemeToggle";
 import ScrollToTop from "../components/ScrollToTop";
+import SkipToContent from "../components/SkipToContent";
 
 const geologica = Geologica({ 
   subsets: ["latin"],
@@ -25,8 +26,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={geologica.className}>
+        <SkipToContent />
         <Navbar />
-        {children}
+        <div id="conteudo-principal" tabIndex={-1}>
+          {children}
+        </div>
         
         <ThemeToggle />
         <ScrollToTop />
