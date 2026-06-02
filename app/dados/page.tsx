@@ -461,9 +461,33 @@ export default function DadosPage() {
             Recomendados: Melhores Co-op (API RAWG)
           </h2>
           {loading ? (
-            <div className="flex justify-center items-center h-64" role="status" aria-live="polite">
-              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-brand-green" aria-hidden="true"></div>
+            <div
+              role="status"
+              aria-live="polite"
+              aria-label="Carregando jogos recomendados, aguarde..."
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            >
               <span className="sr-only">Carregando jogos recomendados, aguarde...</span>
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="bg-brand-surface/60 border border-white/5 rounded-2xl overflow-hidden animate-pulse"
+                  aria-hidden="true"
+                >
+                  {/* Imagem */}
+                  <div className="h-48 bg-white/10" />
+                  {/* Conteúdo */}
+                  <div className="p-6 space-y-3">
+                    {/* Título */}
+                    <div className="h-5 bg-white/10 rounded-md w-3/4" />
+                    {/* Linha gênero + ano */}
+                    <div className="flex justify-between items-center pt-2">
+                      <div className="h-5 bg-brand-green/20 rounded-md w-1/3" />
+                      <div className="h-4 bg-white/10 rounded-md w-10" />
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
